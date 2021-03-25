@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sitedeneme</title>
+    <link rel="stylesheet" href="style2.css">
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+</head>
+<body>
+    <div id="transition">
+        <img id="transitionEffect1" src="ted.jpg" alt="">
+        <img id="transitionEffect2" src="ted.jpg" alt="">
+        <img id="transitionEffect3" src="ted.jpg" alt="">
+        <img id="transitionEffect4" src="black.jpg" alt="">
+    </div>
+    
+    <div id="index">
+        <img src="indir.png" alt="">
+        <a class="btn" onclick="ani()" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Perdeyi Aralayın
+        </a>
+        <script type="text/javascript">
+            function ani() {
+                var img = document.getElementById("transitionEffect4");
+                img.setAttribute("class", "rotated-image");
+            }
+        </script>
+    </div>
+    <div>
+
+    </div>
+
+</body>
+</html>

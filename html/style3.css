@@ -1,0 +1,290 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+#background span
+{
+
+    display: grid;
+    position: absolute;
+    width: 1910px;
+    height: 900px;
+}
+#index
+{
+    visibility: visible;
+    display: grid;
+    z-index: 10;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: #000000;
+}
+#background #a
+{
+    background-image: url("black.jpg");
+    transition: 2s;
+    transform-origin: bottom left;
+    z-index: 5;
+}
+#background #b
+{
+    background-image: url("ted.jpg");
+    transition: 2s;
+    transform-origin: bottom left;
+    z-index: 4;
+}
+#background #c
+{
+    background-image: url("ted.jpg");
+    transition: 2s;
+    transform-origin: bottom left;
+    z-index: 3;
+}
+#background #d
+{
+    background-image: url("ted.jpg");
+    transition: 2.s;
+    transform-origin: bottom left;
+    z-index: 2;
+}
+#index .text
+{
+    color: white;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+}
+#index a
+{
+    text-align: center;
+    z-index: 10;
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    display:inline-block;
+    padding: 15px, 15px;
+    color: #e62b1e;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s
+    
+}
+#index a:hover
+{
+    z-index: 1000;
+    color:    #000000;
+    background: #e62b1e;
+    box-shadow: 0 0 10px  #e62b1e , 0 0 40px #e62b1e , 0 0 80px #e62b1e;
+    filter: blur(.1px);
+    transition-delay: .1s;
+}
+
+#index.active
+{
+    display: none;
+    z-index: 1;
+}
+#main
+{
+    margin: 80px;
+    display: none;
+}
+#main.active
+{
+    display: block;
+}
+#main .yazi
+{
+    display: none;
+    color:gray;
+    font-size: 1.3em;
+    
+}
+#main.active .yazi
+{
+    display: block;
+
+}
+::-webkit-scrollbar
+{
+    width: 10px;
+    background: #222;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #e62b1e;
+    box-shadow: 0 -100vh 0 100vh#e62b1e;
+}
+#main #header
+{
+    display: grid;
+    position: sticky;
+    padding: 10px;
+    grid-template-columns: 40% 40% 40%; 
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+#main #header .date
+{
+    color: white;
+    font-family: consolas;
+    font-size: 2.5em;
+
+}
+#main #header .ticket
+{
+    color: white;
+    width: 300px;
+    border: 5px solid #e62b1e;
+    
+}
+footer
+{
+    width: 100%;
+    background: black;
+    color: white;
+}
+.main-content
+{
+    display: grid;
+    grid-template-columns: 35% 50% auto;
+    margin-right: 65px;
+    margin-left: 60px;
+}
+.main-content .box
+{
+    
+    padding: 10px 20px;
+}
+.box h2
+{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.box .content
+{
+    margin: 20px 0 0 0;
+}
+.left .content .social
+{
+    margin: 20px 0 0 0;
+}
+.left .content .social a
+{
+    color: white;
+    padding: 0 30px;
+}
+.left .content .social a span
+{
+    height: 40px;
+    width: 80px;
+    background:black;
+    line-height: 40px;
+    text-align: center;
+    font-size: 36px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.left .content .social a span:hover
+{
+    background: #e62b1e;
+}
+.left .content p
+{
+    text-align: justify;
+}
+.center .content .text
+{
+    text-align: center;
+}
+.cards
+{
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    grid-template-rows: (3,200px);
+    row-gap: 50px;
+    padding-top: 30px;
+}
+.flip {
+    position: relative;
+}
+.flip > .front, .flip > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.7s;
+    transition-property: all;
+}
+.flip > .front {
+    transform: rotateY(0deg);
+}
+.flip > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip:hover > .front {
+    transform: rotateY(180deg);
+}
+.flip:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.flip.flip-vertical > .back {
+    transform: rotateX(-180deg);
+}
+.flip.flip-vertical:hover > .front {
+    transform: rotateX(180deg);
+}
+.flip.flip-vertical:hover > .back {
+    transform: rotateX(0deg);
+}
+.flip {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+    border-radius: .1px red;
+}
+.flip > .front, .flip > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 220px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background: #000000;
+    border-radius: 10px;
+}
+.flip > .front p, .flip > .back h2
+{
+    text-align: center;
+}
+.flip > .front p, .flip > .back p {
+    font-size: 1.3em;
+    line-height: 160%;
+    color: #999;
+    text-align: center;
+}
+
+.flip .front
+{
+    border: 1px solid red;
+}

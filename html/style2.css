@@ -1,0 +1,138 @@
+*
+{
+    background-color:#000000;
+}
+#index
+{
+    visibility: visible;
+    z-index: 10;
+    position: absolute;
+    top: 80px;
+    left: 120px;
+}
+#index a
+{
+    text-align: center;
+    z-index: 10;
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    display: block;
+    padding: 15px, 15px;
+    color: #e62b1e;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s
+    
+}
+#index a:hover
+{
+    z-index: 1000;
+    color:    #000000;
+    background: #e62b1e;
+    box-shadow: 0 0 10px  #e62b1e , 0 0 40px #e62b1e , 0 0 80px #e62b1e;
+    transition-delay: 1s;
+}
+#index a span
+{
+    position: absolute;
+    display: block;
+}
+#index a span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#e62b1e);
+}
+#index a:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 1s;
+}
+#index a span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#e62b1e);
+}
+#index a:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#index a span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#e62b1e);
+}
+#index a:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#index a span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#e62b1e);
+}
+#index a:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+#transition #transitionEffect1
+{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    transition-delay: 0.2s;
+}
+#transition #transitionEffect2
+{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    transition-delay: 0.15s;
+
+}
+#transition #transitionEffect3
+{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 3;
+    transition-delay: 0.1s;
+
+}
+#transition #transitionEffect4
+{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 4;
+
+}
+.rotated-image {
+    transform-origin: bottom left;
+    transition: 1250ms;
+    transition-delay: 1s;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
